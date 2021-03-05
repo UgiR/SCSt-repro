@@ -14,7 +14,8 @@ spring:
           thingSupplier-out-0: things-out
       bindings:
         things-out:
-          content-type: application/thing
+          #content-type: application/thing
+          content-type: application/json
           destination: thing-topic
     function:
       definition: thingSupplier;
